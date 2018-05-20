@@ -6,5 +6,20 @@ Sklearn's KMeans algorithm is used to process the temperature data in data.csv a
 
 ## how to use ?
 ```
-p
+python ./draw_k_means.py file_path cluster_count
+
+eg.
+python ./draw_k_means.py 'data.csv' 3
 ```
+![how to use](https://github.com/xchendeveloper/k-means/blob/master/result.png)
+
+Now support 8 clusters at most. If you need more clusters, you can customize them.
+
+## how to customize more ?
+```
+from draw_k_means import drawKMeans
+
+drawKMeans("data.csv", 9,['b', 'g', 'r', 'c', 'm', 'y', 'k', 'w','#F09876'])
+```
+
+
